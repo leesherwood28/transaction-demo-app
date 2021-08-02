@@ -3,11 +3,13 @@ import { CommonModule } from '@angular/common';
 
 import { TransactionsRoutingModule } from './transactions-routing.module';
 import { TransactionsOverviewPageComponent } from './transactions-overview-page/transactions-overview-page.component';
+import { TransactionsGridComponent } from './transactions-grid/transactions-grid.component';
 
 
 @NgModule({
   declarations: [
-    TransactionsOverviewPageComponent
+    TransactionsOverviewPageComponent,
+    TransactionsGridComponent
   ],
   imports: [
     CommonModule,
