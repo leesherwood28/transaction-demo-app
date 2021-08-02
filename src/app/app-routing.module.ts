@@ -1,7 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-const routes: Routes = [{ path: 'transactions', loadChildren: () => import('./transactions/transactions.module').then(m => m.TransactionsModule) }];
+const routes: Routes = [
+  { path: '', loadChildren: () => import('./transactions/transactions.module').then(m => m.TransactionsModule) },
+  { path: '**', redirectTo: ''}
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
